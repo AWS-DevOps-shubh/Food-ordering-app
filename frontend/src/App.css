@@ -1,0 +1,72 @@
+/* Apply background image to the whole page */
+body {
+    background-image: url('/asset/food.png'); /* Ensure the correct path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; /* Text color for better visibility */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for main container */
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    padding-top: 80px; /* Push content below the navbar */
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures navbar stays on top */
+}
+
+/* Add space below navbar */
+.main-content {
+    margin-top: 80px; /* Adjust height to avoid overlap */
+    padding-top: 80px; /* Adjust this value to match the navbar height */
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    background: purple;
+    border-radius: 5px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
